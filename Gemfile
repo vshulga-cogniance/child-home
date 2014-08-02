@@ -51,5 +51,6 @@ gem 'spring',        group: :development
 # gem 'capistrano-rails', group: :development
 
 # Use debugger
-# gem 'debugger', group: [:development, :test]
+gem 'debugger2', group: [:development, :test]
 
+gem 'active_model_serializers'
