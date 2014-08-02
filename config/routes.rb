@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
-  root :to => 'assets#index'
+  get 'home/index'
+
+  root :to => 'home#index'
   get 'assets/index'
 
   devise_for :users
