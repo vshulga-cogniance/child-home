@@ -19,11 +19,13 @@
 # To learn more, please read the Rails Internationalization guide
 # available at http://guides.rubyonrails.org/i18n.html.
 
-en:
+ru:
+  date:
+    formats:
+      long: "%d %b %Y"
   time:
     formats:
-      long: "%d %b %Y %I:%M:%S"
-
-  home: "Home"
-  events: "Events"
-  register: "Register"
+      long: "%I:%M:%S"
+  home: "Начало"
+  events: "События"
+  register: "Регистрация"

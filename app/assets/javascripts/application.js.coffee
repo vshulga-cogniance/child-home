@@ -9,6 +9,4 @@
 # for more details see: http://emberjs.com/guides/application/
 window.ChildUa = Ember.Application.create()
 
-$(function() {
-  $(document).foundation();
-});
+$( -> $(document).foundation(); );

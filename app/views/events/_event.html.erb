@@ -1,0 +1,6 @@
+<h1 class="event-name"><%= event.name %></h1>
+<p class="event-description"><%= event.description.html_safe %></p>
+<p class="event-location"><%= event.location %></p>
+<p class="event-start"><%= event.start_date %></p>
+<p class="event-start"><%= event.end_date %></p>
+<a href="<%= participants_new_event_url id: event.id %>" class="button tiny"><%=t :register %></a>

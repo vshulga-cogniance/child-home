@@ -19,11 +19,9 @@
 # To learn more, please read the Rails Internationalization guide
 # available at http://guides.rubyonrails.org/i18n.html.
 
-en:
+ua:
   time:
-    formats:
-      long: "%d %b %Y %I:%M:%S"
-
-  home: "Home"
-  events: "Events"
-  register: "Register"
+    formats: date.strftime("%d %b %Y %I:%M:%S")
+  home: "Стартова"
+  events: "Події"
+  register: "Зареєструватись"

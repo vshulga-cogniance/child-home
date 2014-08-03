@@ -2,9 +2,16 @@ Rails.application.routes.draw do
   get 'home/index'
 
   root :to => 'home#index'
-  get 'assets/index'
 
-  devise_for :users
+  resources :events, only: [ :index, :show ] do
+    member do
+      get  'participants/new' => 'event_participants#new'
+      post 'participants/join' => 'event_participants#create'
+    end
+  end
+
+  devise_for :users, ActiveAdmin::Devise.config
+  ActiveAdmin.routes(self)
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
